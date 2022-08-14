@@ -1,0 +1,12 @@
+h1{
+    color: deeppink;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 30px;
+}
+
+hr{
+    margin-bottom: 90px;
+    width: 90%;
+    border: 1px solid #ffeac1;
+}
