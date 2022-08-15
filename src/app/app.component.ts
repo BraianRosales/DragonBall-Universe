@@ -6,6 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  // showFiller = false;
+  title = 'DragonBall Universe';
+  renderSidenav = true;
+
+  renderChange() {
+    if (this.renderSidenav == true) {
+      this.renderSidenav = false;
+    } else {
+      this.renderSidenav = true;
+    }
+  }
 
   constructor() {}
 

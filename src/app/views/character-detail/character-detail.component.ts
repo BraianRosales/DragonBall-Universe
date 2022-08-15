@@ -9,19 +9,16 @@ import { CharacterDB } from '../../interfaces/index';
   styleUrls: ['./character-detail.component.css']
 })
 export class CharacterDetailComponent implements OnInit {
-
-  param: string | undefined;
+  
   name: string | undefined;
-  character: CharacterDB | undefined;
+  character!: CharacterDB;
 
   constructor(private route: ActivatedRoute, private dragonBallService: DragonballService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      
       // Cambiar a mayuscula la primer letra del nombre que obtengo por parametro con una expresion regular, tambien sirve para una cadena de strings.
-      this.param = params.get('name')!;
-      this.name = this.param.replace(/\b[a-z]/g,c=>c.toUpperCase());
+      this.name = params.get('name')!.replace(/\b[a-z]/g,c=>c.toUpperCase());
 
       this.dragonBallService.characterDetail(this.name).subscribe(res =>{
         this.character = res

@@ -1,0 +1,49 @@
+.example-container {
+    width: 100%;
+    background-color: black;
+    overflow: auto!important;
+}
+
+.example-sidenav{
+    width: 170px;
+    background-color: rgb(66, 66, 66);
+}
+
+.example-sidenav-content{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+    position: 0;
+}
+
+.material-icons{
+    margin-top: 15px;
+    font-size: 40px;
+    color: orange;
+}
+
+.btn-close{
+    width: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    justify-content: flex-end;
+}
+
+#btn-close-children{
+    background-color: #424242;
+    border: #424242;
+    cursor: pointer;
+}
+
+p{
+    margin-top: 27px;
+    font-size: 18px
+}
+
+::ng-deep .mat-drawer-content{
+    height: 100vh!important;
+}

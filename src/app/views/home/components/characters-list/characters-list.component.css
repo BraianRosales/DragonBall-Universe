@@ -5,6 +5,7 @@
     flex-direction: row;
     align-content: start;
     flex-wrap: wrap;
+    min-height: 100vh;
 }
 
 .example-card{
@@ -20,4 +21,18 @@ img{
 .buttons-wrap{
     margin: 0px auto;
     width: 80%;
+}
+
+.btn{
+    font-size: 15px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.btn:hover{
+    box-shadow: #df9000 0px 0px 15px 3px inset;
 }

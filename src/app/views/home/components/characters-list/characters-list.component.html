@@ -2,11 +2,10 @@
     <!-- Directiva estructural ngfor / ngif -->
     <mat-card *ngFor="let character of characters" class="example-card">
         <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>{{character.name}}</mat-card-title>
             <mat-card-subtitle>{{character.role}}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src={{character.imageUrl}} alt="Photo of a Shiba Inu">
+        <img mat-card-image src={{character.imageUrl}} alt="not found">
         <mat-card-content>
             <mat-list role="list">
                 <mat-list-item role="listitem">Especie: {{character.specie}}</mat-list-item>
@@ -15,11 +14,8 @@
             </mat-list>
         </mat-card-content>
         <mat-card-actions class="buttons-wrap">
-            <a mat-raised-button color="primary" href="#" target="_blank">Ver mas..</a>
-            <a mat-raised-button  href="#" target="_blank"><span
-                    class="material-icons">
-                    star_border
-                </span></a>
+            <a mat-button class="btn" [routerLink]="character.name | characterLink">Ver mas..</a>
+            <a mat-raised-button href="#" target="_blank"><span class="material-icons">star_border</span></a>
         </mat-card-actions>
     </mat-card>
 </div>

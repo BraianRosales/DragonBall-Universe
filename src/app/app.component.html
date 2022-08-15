@@ -1,1 +1,25 @@
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <div class="btn-close">
+            <p>Cerrar</p>
+            <button id="btn-close-children" type="button" (click)="drawer.toggle(); renderChange()">
+                <span class="material-icons">
+                    close
+                </span>
+            </button>
+        </div>
+    </mat-drawer>
+
+    <div *ngIf="renderSidenav">
+        <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle(); renderChange()">
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+            <p>Menu</p>
+        </div>
+    </div>
+    <!-- Vistas dinamicas -->
+        <router-outlet></router-outlet>
+</mat-drawer-container>
