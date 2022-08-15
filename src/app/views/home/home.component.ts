@@ -16,8 +16,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.DBservice.charactersDB().subscribe((characters: CharacterDB[]) => {
       this.dragonBallCharacters = characters;
-      // Save in console form of table.
-      console.log(this.dragonBallCharacters);
     });
   }
 }

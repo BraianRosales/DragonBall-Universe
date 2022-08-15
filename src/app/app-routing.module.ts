@@ -12,19 +12,19 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
+    loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule)
   },
   {
     path:'character/:name',
-    component: CharacterDetailComponent,
+    loadChildren: () => import('./views/character-detail/character-detail.module').then(m => m.CharacterDetailModule)
+  },
+  {
+    path: '404',
+    loadChildren: () => import('./views/error-page/error-page.module').then(m => m.ErrorPageModule)
   },
   {
     path: '**',
     redirectTo: '404',
-  },
-  {
-    path: '404',
-    component: ErrorPageComponent,
   },
 ];
 

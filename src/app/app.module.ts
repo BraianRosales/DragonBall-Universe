@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { ViewsModule } from './views/views.module';
 import { MaterialModule } from './material/material.module';
+import { ErrorPageModule } from './views/error-page/error-page.module';
+import { CharacterDetailModule } from './views/character-detail/character-detail.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,9 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    ViewsModule,
-    MaterialModule
+    MaterialModule,
+    // Vistas
+    ErrorPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
