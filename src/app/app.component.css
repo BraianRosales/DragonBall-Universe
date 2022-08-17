@@ -7,6 +7,8 @@
 .example-sidenav{
     width: 170px;
     background-color: rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
 }
 
 .example-sidenav-content{
@@ -31,6 +33,7 @@
     flex-direction: row;
     border-bottom: 1px solid gray;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 #btn-close-children{
@@ -39,11 +42,16 @@
     cursor: pointer;
 }
 
-p{
-    margin-top: 27px;
-    font-size: 18px
-}
-
 ::ng-deep .mat-drawer-content{
     height: 100vh!important;
+}
+
+p{
+    margin-top: 27px;
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.p-link{
+    cursor: pointer;
 }

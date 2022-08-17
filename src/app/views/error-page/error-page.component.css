@@ -1,7 +1,28 @@
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
 p {
-    background-color: red;
-    color: whitesmoke;
-    padding: 25px;
-    width: 100%;
-    font-size: 20px;
+    color: red;
+    font-size: 25px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 8%;
+    background-color: #565656;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover {
+    box-shadow: #df9000 0px 0px 15px 3px inset;
 }

@@ -18,7 +18,6 @@ const routes: Routes = [
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule,
     RouterModule.forChild(routes)
   ]
 })

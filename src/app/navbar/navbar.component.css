@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+    width: 106%;
+    margin-left: -45px !important;
+}
+
+li {
+    border-bottom: 1px solid rgb(109, 109, 109);
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+}

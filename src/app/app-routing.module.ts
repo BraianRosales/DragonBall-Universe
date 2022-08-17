@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './views/home/home.component';
-import { ErrorPageComponent } from './views/error-page/error-page.component';
-import { CharacterDetailComponent } from './views/character-detail/character-detail.component';
 
 export const routes: Routes = [
   {
@@ -17,6 +14,18 @@ export const routes: Routes = [
   {
     path:'character/:name',
     loadChildren: () => import('./views/character-detail/character-detail.module').then(m => m.CharacterDetailModule)
+  },
+  {
+    path:'search',
+    loadChildren: () => import('./navbar/components/search/search.module').then(m => m.SearchModule)
+  },
+  {
+    path: 'fighters',
+    loadChildren: () => import('./navbar/components/z-fighters/z-fighters.module').then(m => m.ZFightersModule)
+  },
+  {
+    path:'favorites',
+    loadChildren: () => import('./navbar/components/favorites/favorites.module').then(m => m.FavoritesModule)
   },
   {
     path: '404',
