@@ -18,4 +18,8 @@ export class CharacterCardComponent implements OnInit {
     console.log('Objeto agregado: ', character);
     this.stateAppService.addToFavorites(character);
   }
+
+  characterInFavorites(character: CharacterDB){
+    return this.stateAppService.myListIds().includes(character.id)
+  }
 }
