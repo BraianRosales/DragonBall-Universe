@@ -9,7 +9,14 @@ li {
     cursor: pointer;
 }
 
-p{
+p {
     text-align: center;
     margin: 10px;
+}
+
+span {
+    padding: 2px;
+    border-radius: 5px;
+    background: orangered;
+    margin-left: 1px;
 }

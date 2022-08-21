@@ -6,6 +6,11 @@
         <p>UNIVERSES</p>
     </li>
     <li [routerLink]="['/favorites']">
-        <p>FAVORITOS</p>
+        <p *ngIf="myList.length > 0; else templateName">FAVORITOS
+            <span> {{myList.length}}</span>
+        </p>
+        <ng-template #templateName>
+            <p>FAVORITOS</p>
+        </ng-template>
     </li>
 </ul>

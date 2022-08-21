@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StateAppService } from '../services/stateApp.service';
+import { CharacterDB } from '../interfaces/index';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  myList: CharacterDB[] = []
+
+  constructor(private stateService: StateAppService) { }
 
   ngOnInit(): void {
+    this.stateService.myFavoritesList$.subscribe((list: CharacterDB[])=>{
+      this.myList = list;
+    })
   }
 
 }
