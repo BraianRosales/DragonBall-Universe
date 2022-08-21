@@ -2,11 +2,17 @@ h1{
     color: orange;
     text-align: center;
     line-height: 10rem;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: ui-monospace;
 }
 
 hr{
     margin-bottom: 90px;
     width: 90%;
     border: 1px solid #ffeac1;
+}
+
+.material-icons{
+    font-size: 30px;
+    margin-left: -5px;
 }

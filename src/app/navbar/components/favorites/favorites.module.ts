@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MaterialModule } from '../../../material/material.module';
 
+
 const routes: Routes = [
   {
     path: '',

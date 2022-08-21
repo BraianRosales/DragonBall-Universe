@@ -1,15 +1,16 @@
-button{
+button {
     cursor: pointer;
 }
 
-
-h1{
+h1 {
+    font-size: 35px;
     text-align: center;
     padding-top: 90px;
     color: orange;
+    font-family: ui-monospace;
 }
 
-.characters-list{
+.characters-list {
     margin: 0px auto;
     width: 80%;
     display: flex;
@@ -19,7 +20,20 @@ h1{
     min-height: 85vh;
 }
 
-.example-card{
+.NotCharacters {
+    width: 100%;
+    text-align: center;
+    color: orangered;
+    font-size: 22px;
+    margin-top: 150px;
+}
+
+.example-card {
     width: 15%;
     margin: 18px;
+}
+
+.material-icons{
+    font-size: 30px;
+    margin-left: -5px;
 }

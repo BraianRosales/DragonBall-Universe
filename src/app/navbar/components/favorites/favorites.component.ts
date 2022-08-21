@@ -14,8 +14,7 @@ export class FavoritesComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  removeFromFavorites(id: number){
-    console.log(id);
-    this.stateAppService.removeFromFavorites(id)
+  myListIsEmpty(){
+    return this.stateAppService.myList.length === 0;
   }
 }

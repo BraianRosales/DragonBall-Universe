@@ -4,11 +4,12 @@ import { CharacterCardComponent } from './character-card/character-card.componen
 import { RouterModule } from '@angular/router';
 import { CharacterLinkPipe } from './pipes/character-link.pipe';
 import { CommonModule } from '@angular/common';
+import { NoCharacterFoundComponent } from './no-character-found/no-character-found.component';
 
 @NgModule({
   imports: [MaterialModule,RouterModule, CommonModule],
-  exports: [CharacterCardComponent],
-  declarations: [CharacterCardComponent,CharacterLinkPipe],
+  exports: [CharacterCardComponent, NoCharacterFoundComponent],
+  declarations: [CharacterCardComponent,CharacterLinkPipe, NoCharacterFoundComponent],
   providers: [],
 })
 export class SharedModule {}
