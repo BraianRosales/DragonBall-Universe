@@ -12,13 +12,13 @@ h1 {
 
 .characters-list {
     margin: 0px auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     min-height: 85vh;
-    margin-left: 243px
 }
 
 .NotCharacters {
@@ -43,7 +43,7 @@ h1 {
 .favorites{
     display: block;
     margin: 0px auto;
-    width: 90%;
+    width: 75%;
 }
 
 .header_favorites{
@@ -62,4 +62,9 @@ h1 {
 
 .broom:hover{
     color: orange;
+}
+
+.clean{
+    margin-right: 10px;
+    margin-bottom: 5px;
 }

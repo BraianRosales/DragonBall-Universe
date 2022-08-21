@@ -5,13 +5,13 @@
                 star_purple500
             </span>
         </h1>
-        <div class="broom">
-            <a (click)="cleanFavorites()" class="material-icons">
-                cleaning_services
+        <div *ngIf="!myListIsEmpty()" class="broom">
+            <a (click)="openDialog()" class="material-icons">
+                delete
             </a>
         </div>
     </div>
-    
+
     <div class="characters-list">
         <div class="NotCharacters" *ngIf="myListIsEmpty() ;else lsFavorites">
             <app-no-character-found></app-no-character-found>

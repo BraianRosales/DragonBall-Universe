@@ -1,12 +1,12 @@
 .example-container {
     width: 100%;
-    background-color: black;
+    background-image: url(.././app/images/50.jpg) ;
     overflow: auto!important;
 }
 
 .example-sidenav{
     width: 170px;
-    background-color: rgb(66, 66, 66);
+    background-color: black;
     display: flex;
     flex-direction: column;
 }
@@ -15,7 +15,7 @@
     width: 170px;
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: #04044e;
     position: fixed;
     position: 0;
 }
@@ -37,7 +37,7 @@
 }
 
 #btn-close-children{
-    background-color: #424242;
+    background-color: black;
     border: #424242;
     cursor: pointer;
 }

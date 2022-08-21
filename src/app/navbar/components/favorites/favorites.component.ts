@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { StateAppService } from '../../../services/stateApp.service';
+import { DialogAnimationsComponent } from '../../../shared/dialog-animations/dialog-animations.component';
 
 @Component({
   selector: 'app-favorites',
@@ -7,18 +9,22 @@ import { StateAppService } from '../../../services/stateApp.service';
   styleUrls: ['./favorites.component.css'],
 })
 export class FavoritesComponent implements OnInit {
-
   myListFavorites$ = this.stateAppService.myFavoritesList$;
 
-  constructor(private stateAppService: StateAppService) {}
+  constructor(
+    private stateAppService: StateAppService,
+    public dialog: MatDialog
+  ) {}
 
   ngOnInit(): void {}
 
-  myListIsEmpty(){
+  myListIsEmpty() {
     return this.stateAppService.myList.length === 0;
   }
 
-  cleanFavorites(){
-    this.stateAppService.clean()
+  openDialog(): void {
+    this.dialog.open(DialogAnimationsComponent, {
+      width: '250px',
+    });
   }
 }

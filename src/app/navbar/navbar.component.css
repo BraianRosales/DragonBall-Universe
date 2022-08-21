@@ -20,3 +20,9 @@ span {
     background: orangered;
     margin-left: 1px;
 }
+
+::ng-deep .mat-drawer-inner-container{
+    width: 97%;
+    overflow: unset;
+    background: black;
+}
