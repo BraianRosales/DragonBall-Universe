@@ -1,2 +1,7 @@
 <app-header [principalTitle]="title"></app-header>
-<app-characters-list [characters]="dragonBallCharacters"></app-characters-list>
+<div *ngIf="dragonBallCharacters.length !== 0; else listCharacters">
+    <app-characters-list [characters]="dragonBallCharacters"></app-characters-list>
+</div>
+<ng-template #listCharacters>
+    <mat-spinner style="width: 8%; display: block; margin: 0px auto;"></mat-spinner>
+</ng-template>

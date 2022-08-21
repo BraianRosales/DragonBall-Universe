@@ -14,8 +14,10 @@ export class HomeComponent implements OnInit {
   constructor(private DBservice: DragonballService) {}
 
   ngOnInit(): void {
-    this.DBservice.charactersDB().subscribe((characters: CharacterDB[]) => {
-      this.dragonBallCharacters = characters;
-    });
+    setTimeout(() => {
+      this.DBservice.charactersDB().subscribe((characters: CharacterDB[]) => {
+        this.dragonBallCharacters = characters;
+      });
+    }, 800);
   }
 }
