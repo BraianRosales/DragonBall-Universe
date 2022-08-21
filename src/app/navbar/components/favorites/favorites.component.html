@@ -1,15 +1,25 @@
-<h1>Lista de favoritos
-    <span class="material-icons">
-        star_purple500
-    </span>
-</h1>
-<div class="characters-list">
-    <div class="NotCharacters" *ngIf="myListIsEmpty() ;else lsFavorites">
-        <app-no-character-found></app-no-character-found>
+<div class="favorites">
+    <div class="header_favorites">
+        <h1>Lista de favoritos
+            <span class="material-icons">
+                star_purple500
+            </span>
+        </h1>
+        <div class="broom">
+            <a (click)="cleanFavorites()" class="material-icons">
+                cleaning_services
+            </a>
+        </div>
     </div>
-    <ng-template #lsFavorites>
-        <mat-card *ngFor="let character of (myListFavorites$ | async)" class="example-card">
-            <app-character-card [character]="character"></app-character-card>
-        </mat-card>
-    </ng-template>
+    
+    <div class="characters-list">
+        <div class="NotCharacters" *ngIf="myListIsEmpty() ;else lsFavorites">
+            <app-no-character-found></app-no-character-found>
+        </div>
+        <ng-template #lsFavorites>
+            <mat-card *ngFor="let character of (myListFavorites$ | async)" class="example-card">
+                <app-character-card [character]="character"></app-character-card>
+            </mat-card>
+        </ng-template>
+    </div>
 </div>

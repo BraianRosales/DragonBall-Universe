@@ -17,4 +17,8 @@ export class FavoritesComponent implements OnInit {
   myListIsEmpty(){
     return this.stateAppService.myList.length === 0;
   }
+
+  cleanFavorites(){
+    this.stateAppService.clean()
+  }
 }

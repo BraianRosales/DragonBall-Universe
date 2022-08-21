@@ -21,11 +21,16 @@ export class StateAppService {
   }
 
   removeFromFavorites(idCharacter: number) {
-    this.myList = this.myList.filter( (character: CharacterDB) => character.id !== idCharacter )
+    this.myList = this.myList.filter( (character: CharacterDB) => character.id !== idCharacter );
     this.myFavoritesList.next(this.myList);
   }
 
   myListIds(){
-    return this.myList.map( (character) =>  character.id)
+    return this.myList.map( (character) =>  character.id);
+  }
+
+  clean(){
+    this.myList = [];
+    this.myFavoritesList.next(this.myList)
   }
 }
