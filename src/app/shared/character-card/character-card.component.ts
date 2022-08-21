@@ -19,6 +19,11 @@ export class CharacterCardComponent implements OnInit {
     this.stateAppService.addToFavorites(character);
   }
 
+  removeCharacter(character: CharacterDB){
+    console.log('Objeto removido: ', character);
+    this.stateAppService.removeFromFavorites(character.id)
+  }
+
   characterInFavorites(character: CharacterDB){
     return this.stateAppService.myListIds().includes(character.id)
   }
