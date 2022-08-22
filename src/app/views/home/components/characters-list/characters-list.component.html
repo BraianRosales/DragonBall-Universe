@@ -1,6 +1,8 @@
 <div class="characters-list">
     <!-- Directiva estructural ngfor / ngif -->
-    <mat-card *ngFor="let character of characters" class="example-card">
+    <mat-card *ngFor="let character of characters | paginate: { itemsPerPage: 5, currentPage: page }"
+        class="example-card">
         <app-character-card [character]="character"></app-character-card>
     </mat-card>
 </div>
+<pagination-controls (pageChange)="page = $event" previousLabel="Previous" nextLabel="Next"></pagination-controls>

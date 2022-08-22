@@ -68,3 +68,7 @@ h1 {
     margin-right: 10px;
     margin-bottom: 5px;
 }
+
+::ng-deep .mat-dialog-container{
+    background: black!important;
+}

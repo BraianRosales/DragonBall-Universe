@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { NoCharacterFoundComponent } from './no-character-found/no-character-found.component';
 import { DialogAnimationsComponent } from './dialog-animations/dialog-animations.component';
 
+
 @NgModule({
   imports: [MaterialModule,RouterModule, CommonModule],
   exports: [CharacterCardComponent, NoCharacterFoundComponent, DialogAnimationsComponent],

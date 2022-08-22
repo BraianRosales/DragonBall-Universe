@@ -9,6 +9,7 @@ import { StateAppService } from 'src/app/services/stateApp.service';
 })
 export class CharactersListComponent implements OnInit {
   @Input() characters: CharacterDB[] = [];
+  page: number = 1;
 
   constructor() {}
 

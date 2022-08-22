@@ -24,7 +24,8 @@ button:hover {
 .example-card {
     max-width: 22%;
     cursor: pointer;
-    background-color: black!important;
+    background-color: initial;
+    box-shadow: none;
 }
 
 .example-header-image {
