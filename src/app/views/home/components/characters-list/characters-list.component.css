@@ -5,6 +5,7 @@
     flex-direction: row;
     align-content: start;
     flex-wrap: wrap;
+    padding-left: 45px;
 }
 
 .example-card {

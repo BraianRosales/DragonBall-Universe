@@ -17,7 +17,7 @@ button {
     font-size: 18px;
     border-radius: 10px;
     width: 8%;
-    background-color: #565656;
+    background-color: black;
     color: white;
     cursor: pointer;
     transition: 300ms;

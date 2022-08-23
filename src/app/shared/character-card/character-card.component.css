@@ -25,7 +25,10 @@ img {
 
 .orange-start {
     color: orange;
+    box-shadow: 0px 0px 5px 3px orange;
+    border-radius: 10px;
 }
+
 
 ::ng-deep .mat-list-item-content {
     padding: 0px !important;
@@ -50,4 +53,10 @@ img {
 .mat-mini-fab {
     color: #fff;
     background-color: black;
+}
+
+.material-icons:hover{
+    color: orange;
+    box-shadow: 0px 0px 6px 3px orange;
+    border-radius: 10px;
 }
