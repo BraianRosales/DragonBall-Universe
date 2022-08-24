@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
 import { DragonballService } from '../../../services/dragonball.service';
 import { CharacterDB } from '../../../interfaces/index';
 import { StateAppService } from '../../../services/stateApp.service';
+
 
 @Component({
   selector: 'app-z-fighters',
