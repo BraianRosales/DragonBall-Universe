@@ -15,7 +15,6 @@ export class CharacterCardComponent implements OnInit {
   ngOnInit(): void {}
 
   addToFavorites(character: CharacterDB) {
-    console.log('Objeto agregado: ', character);
     this.stateAppService.addToFavorites(character);
   }
 

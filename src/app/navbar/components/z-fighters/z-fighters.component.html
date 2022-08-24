@@ -1,1 +1,20 @@
-<p>z-fighters works!</p>
+<div class="favorites">
+    <div class="header_favorites">
+        <h1>Guerreros Z
+            <span class="material-icons">
+                star_purple500
+            </span>
+        </h1>
+    </div>
+
+    <div class="characters-list">
+        <div *ngIf="myListIsEmpty() ;else lsFavorites">
+            CARGANDO...
+        </div>
+        <ng-template #lsFavorites>
+            <mat-card *ngFor="let character of charactersZ" class="example-card">
+                <app-character-card [character]="character"></app-character-card>
+            </mat-card>
+        </ng-template>
+    </div>
+</div>

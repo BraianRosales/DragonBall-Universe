@@ -15,6 +15,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [FavoritesComponent],
-  imports: [CommonModule, MaterialModule, SharedModule ,RouterModule.forChild(routes)],
+  imports: [CommonModule, MaterialModule, SharedModule, RouterModule.forChild(routes)],
 })
 export class FavoritesModule {}

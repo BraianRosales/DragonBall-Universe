@@ -9,3 +9,11 @@
 .mat-dialog-title{
     text-align: center;
 }
+
+button{
+    background: coral;
+}
+
+button:hover{
+    background: orangered;
+}
