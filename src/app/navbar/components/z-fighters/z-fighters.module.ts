@@ -11,7 +11,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [ZFightersComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
 export class ZFightersModule {}
