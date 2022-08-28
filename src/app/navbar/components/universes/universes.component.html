@@ -1,0 +1,17 @@
+<div class="universe">
+    <div class="header_universe">
+        <h1>Universo {{universeNumber}}
+        </h1>
+    </div>
+
+    <div class="characters-list">
+        <div *ngIf="myListIsEmpty() ;else lsUniverse">
+            CARGANDO...
+        </div>
+        <ng-template #lsUniverse>
+            <mat-card *ngFor="let character of universeList" class="example-card">
+                <app-character-card [character]="character"></app-character-card>
+            </mat-card>
+        </ng-template>
+    </div>
+</div>

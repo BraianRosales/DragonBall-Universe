@@ -20,5 +20,4 @@ export class DragonballService {
   characterDetail(characterName: string): Observable<CharacterDB>{
     return this.httpClient.get<CharacterDB>(`${this._url}/characters/${characterName}`)
   }
-
 }

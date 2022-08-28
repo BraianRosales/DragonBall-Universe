@@ -31,44 +31,44 @@ h1 {
 }
 
 .example-card {
-    width: 18%;
+    width: 19%;
     margin: 18px;
 }
 
-.material-icons{
+.material-icons {
     font-size: 30px;
     margin-left: -5px;
 }
 
-.favorites{
+.favorites {
     display: block;
     margin: 0px auto;
     width: 75%;
 }
 
-.header_favorites{
+.header_favorites {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.broom{
+.broom {
     padding-top: 95px;
     cursor: pointer;
     transition: 500ms;
     margin-right: 110px;
 }
 
-.broom:hover{
+.broom:hover {
     color: orange;
 }
 
-.clean{
+.clean {
     margin-right: 10px;
     margin-bottom: 5px;
 }
 
-::ng-deep .mat-dialog-container{
-    background: black!important;
+::ng-deep .mat-dialog-container {
+    background: black !important;
 }

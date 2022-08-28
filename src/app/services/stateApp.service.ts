@@ -10,6 +10,10 @@ export class StateAppService {
   myFavoritesList = new BehaviorSubject<CharacterDB[]>([]);
   myFavoritesList$ = this.myFavoritesList.asObservable();
 
+  universeNum: number = 0;
+  universeNumber = new BehaviorSubject<number>(0);
+  universeNumber$ = this.universeNumber.asObservable();
+
   constructor() {}
 
   addToFavorites(newCharacterDB: CharacterDB) {
@@ -26,11 +30,19 @@ export class StateAppService {
   }
 
   myListIds(){
-    return this.myList.map( (character) =>  character.id);
+    return this.myList.map((character) =>  character.id);
   }
 
   clean(){
     this.myList = [];
     this.myFavoritesList.next(this.myList)
   }
+
+  // Estado numerico del url en el componente universes.
+
+  universe(universeNumber: number){
+    this.universeNum = universeNumber;
+    this.universeNumber.next(this.universeNum)
+  }
+  
 }

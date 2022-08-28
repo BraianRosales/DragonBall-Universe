@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 import { RouterModule } from '@angular/router';
 import { NavbarModule } from './navbar/navbar.module';
-import { NgxPaginationModule } from 'ngx-pagination';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,9 +16,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    MaterialModule,
     RouterModule,
     NavbarModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],

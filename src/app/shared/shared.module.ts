@@ -6,12 +6,12 @@ import { CharacterLinkPipe } from './pipes/character-link.pipe';
 import { CommonModule } from '@angular/common';
 import { NoCharacterFoundComponent } from './no-character-found/no-character-found.component';
 import { DialogAnimationsComponent } from './dialog-animations/dialog-animations.component';
-
+import { UniverseLinkPipe } from './pipes/universe-link.pipe';
 
 @NgModule({
   imports: [MaterialModule,RouterModule, CommonModule],
-  exports: [CharacterCardComponent, NoCharacterFoundComponent, DialogAnimationsComponent],
-  declarations: [CharacterCardComponent,CharacterLinkPipe, NoCharacterFoundComponent, DialogAnimationsComponent],
+  exports: [CharacterCardComponent, NoCharacterFoundComponent, DialogAnimationsComponent, MaterialModule, UniverseLinkPipe],
+  declarations: [CharacterCardComponent,CharacterLinkPipe, NoCharacterFoundComponent, DialogAnimationsComponent, UniverseLinkPipe],
   providers: [],
 })
 export class SharedModule {}

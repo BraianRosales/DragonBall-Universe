@@ -13,8 +13,7 @@
 <mat-card-actions class="buttons-wrap">
     <a mat-button class="btn" [routerLink]="character.name | characterLink">Ver mas..</a>
     <a mat-raised-button
-        (click)="!characterInFavorites(character) ? addToFavorites(character): removeCharacter(character)"
-        target="_blank">
+        (click)="!characterInFavorites(character) ? addToFavorites(character): removeCharacter(character)" target="_blank">
         <span [ngClass]="{'orange-start': characterInFavorites(character)}" class="material-icons">star_border</span>
     </a>
 </mat-card-actions>

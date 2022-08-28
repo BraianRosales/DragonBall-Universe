@@ -5,10 +5,8 @@ import { CharactersListComponent } from './components/characters-list/characters
 import { MaterialModule } from '../../material/material.module';
 import { RouterModule, Route } from '@angular/router';
 import { HomeComponent } from './home.component';
-
 import { Routes } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
-
 import { NgxPaginationModule } from 'ngx-pagination';
 
 export const routes: Routes = [
@@ -26,7 +24,6 @@ export const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    MaterialModule,
     SharedModule,
     NgxPaginationModule,
     RouterModule.forChild(routes),

@@ -21,8 +21,26 @@ span {
     margin-left: 1px;
 }
 
-::ng-deep .mat-drawer-inner-container{
+::ng-deep .mat-drawer-inner-container {
     width: 97%;
     overflow: unset;
     background: black;
+}
+
+button {
+    text-align: center;
+}
+
+button:hover {
+    background: black !important;
+}
+
+::ng-deep .mat-menu-content,
+.ng-tns-c48-1 {
+    background: #df531f !important;
+    padding: 0px !important;
+}
+
+::ng-deep .mat-menu-panel{
+    border-radius: 1px!important;
 }

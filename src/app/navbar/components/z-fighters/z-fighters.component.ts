@@ -18,7 +18,7 @@ export class ZFightersComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.getCharactersZ()
-    }, 1000);
+    }, 500);
   }
 
   getCharactersZ() {

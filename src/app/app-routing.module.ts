@@ -15,9 +15,10 @@ export const routes: Routes = [
     path:'character/:name',
     loadChildren: () => import('./views/character-detail/character-detail.module').then(m => m.CharacterDetailModule)
   },
-  // {
-  //   path:'universes',
-  // },
+  {
+    path:'universe/:number',
+    loadChildren: () => import('./navbar/components/universes/universes.module').then(m => m.UniversesModule)
+  },
   {
     path:'fighters',
     loadChildren: () => import('./navbar/components/z-fighters/z-fighters.module').then(m => m.ZFightersModule)

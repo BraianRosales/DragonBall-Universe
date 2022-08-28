@@ -32,13 +32,12 @@ h1 {
     margin-left: -5px;
 }
 
-.favorites{
+.universe{
     display: block;
     margin: 0px auto;
     width: 75%;
 }
-
-.header_favorites{
+.header_universe{
     width: 100%;
     display: flex;
     flex-direction: row;
