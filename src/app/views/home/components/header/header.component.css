@@ -1,4 +1,4 @@
-h1{
+h1 {
     color: orange;
     text-align: center;
     line-height: 10rem;
@@ -6,13 +6,45 @@ h1{
     font-family: ui-monospace;
 }
 
-hr{
+hr {
     margin-bottom: 80px;
     width: 80%;
     border: 1px solid #ffeac1;
 }
 
-.material-icons{
+.material-icons {
     font-size: 30px;
     margin-left: -5px;
+}
+
+
+/* -----------------MEDIA QUERYS----------------- */
+
+/* Desde 0px hasta 576px */
+@media (max-width: 576px) {
+
+    /* Se ejecutan estos estilos */
+    h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .material-icons {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    @media (max-width: 768px) {}
+
+    @media (max-width: 992px) {
+        .buttons-wrap {}
+
+        .mat-list-base .mat-list-item {}
+    }
+
+    @media (max-width: 1200px) {
+        .example-card {}
+    }
+
+    @media (max-width: 1400px) {}
 }

@@ -22,6 +22,7 @@ img {
 .buttons-wrap {
     margin: 0px auto;
     width: 77%;
+    padding-left: 15px;
 }
 
 .orange-start {
@@ -57,8 +58,34 @@ img {
     width: 40%;
 }
 
-.material-icons:hover{
+.material-icons:hover {
     color: orange;
     box-shadow: 0px 0px 6px 3px orange;
     border-radius: 10px;
 }
+
+/* -----------------MEDIA QUERYS----------------- */
+
+/* Desde 0px hasta 576px */
+@media (max-width: 576px) {
+
+    /* Se ejecutan estos estilos */
+    .buttons-wrap {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {
+    .buttons-wrap {}
+
+    .mat-list-base .mat-list-item {}
+}
+
+@media (max-width: 1200px) {
+    .example-card {}
+}
+
+@media (max-width: 1400px) {}

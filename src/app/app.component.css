@@ -15,7 +15,7 @@
     width: 170px;
     display: flex;
     flex-direction: row;
-    background-color: #04044e;
+    background-color: transparent;
     position: fixed;
     position: 0;
 }
