@@ -37,3 +37,25 @@ button:hover {
 img {
     height: 500px;
 }
+
+/* -----------------MEDIA QUERYS----------------- */
+
+/* Desde 0px hasta 576px */
+@media (max-width: 576px) {
+
+    /* Se ejecutan estos estilos */
+    .example-card{
+        max-width: 75%;
+    }
+    img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}

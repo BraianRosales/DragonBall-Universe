@@ -1,7 +1,7 @@
 h1 {
     color: orange;
     text-align: center;
-    line-height: 10rem;
+    line-height: 5rem;
     font-size: 35px;
     font-family: ui-monospace;
 }
@@ -26,7 +26,7 @@ hr {
     /* Se ejecutan estos estilos */
     h1 {
         text-align: center;
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .material-icons {

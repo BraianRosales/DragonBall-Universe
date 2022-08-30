@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'DragonBall Universe';
-  renderSidenav = true;
+  @ViewChild('sidenav') sidenav!: MatSidenav;
 
-  renderChange() {
-    if (this.renderSidenav == true) {
-      this.renderSidenav = false;
-    } else {
-      this.renderSidenav = true;
-    }
+  reason = '';
+
+  close(reason: string) {
+    this.reason = reason;
+    this.sidenav.close();
   }
 
   constructor() {}

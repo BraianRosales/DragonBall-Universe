@@ -1,32 +1,23 @@
 .example-container {
     width: 100%;
-    background-image: url(.././app/images/50.jpg) ;
-    overflow: auto!important;
+    background-image: url(.././app/images/50.jpg);
+    overflow: auto !important;
 }
 
-.example-sidenav{
+.example-sidenav {
     width: 170px;
     background-color: black;
     display: flex;
     flex-direction: column;
 }
 
-.example-sidenav-content{
-    width: 170px;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    position: fixed;
-    position: 0;
-}
-
-.material-icons{
-    margin-top: 15px;
-    font-size: 40px;
+.material-icons {
+    font-size: 50px;
     color: orange;
+    margin-left: 20px;
 }
 
-.btn-close{
+.btn-close {
     width: 100%;
     float: right;
     display: flex;
@@ -36,22 +27,28 @@
     margin-bottom: 20px;
 }
 
-#btn-close-children{
-    background-color: black;
-    border: #424242;
-    cursor: pointer;
+::ng-deep .mat-drawer-content {
+    height: 100vh !important;
 }
 
-::ng-deep .mat-drawer-content{
-    height: 100vh!important;
-}
-
-p{
-    margin-top: 27px;
+p {
+    margin-top: 20px;
     font-size: 18px;
-    margin-right: 7px;
 }
 
-.p-link{
+.p-link {
     cursor: pointer;
+    margin-right: -12px;
+}
+
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button {
+    padding: 0px;
 }

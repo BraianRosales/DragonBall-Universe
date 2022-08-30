@@ -5,7 +5,6 @@ button {
 h1 {
     font-size: 35px;
     text-align: center;
-    padding-top: 90px;
     color: orange;
     font-family: ui-monospace;
 }
@@ -63,3 +62,33 @@ h1 {
 ::ng-deep .mat-dialog-container{
     background: black!important;
 }
+
+/* -----------------MEDIA QUERYS----------------- */
+
+/* Desde 0px hasta 576px */
+@media (max-width: 576px) {
+
+    /* Se ejecutan estos estilos */
+    .characters-list {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 89%;
+        margin: 0px;
+        margin-bottom: 25px;
+    }
+
+    ::ng-deep .ngx-pagination {
+        width: 85% !important;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}

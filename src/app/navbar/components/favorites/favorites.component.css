@@ -4,8 +4,8 @@ button {
 
 h1 {
     font-size: 35px;
+    margin-top: 5px;
     text-align: center;
-    padding-top: 90px;
     color: orange;
     font-family: ui-monospace;
 }
@@ -36,8 +36,14 @@ h1 {
 }
 
 .material-icons {
-    font-size: 30px;
-    margin-left: -5px;
+    font-size: 35px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.material-icons:hover {
+    box-shadow: 0px 0px 15px 6px white;
+    border-radius: 30px;
 }
 
 .favorites {
@@ -50,17 +56,12 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .broom {
-    padding-top: 95px;
     cursor: pointer;
     transition: 500ms;
-    margin-right: 110px;
-}
-
-.broom:hover {
+    margin-right: -30px;
     color: orange;
 }
 
@@ -72,3 +73,33 @@ h1 {
 ::ng-deep .mat-dialog-container {
     background: black !important;
 }
+
+/* -----------------MEDIA QUERYS----------------- */
+
+/* Desde 0px hasta 576px */
+@media (max-width: 576px) {
+
+    /* Se ejecutan estos estilos */
+    .characters-list {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 89%;
+        margin: 0px;
+        margin-bottom: 25px;
+    }
+
+    ::ng-deep .ngx-pagination {
+        width: 85% !important;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}
