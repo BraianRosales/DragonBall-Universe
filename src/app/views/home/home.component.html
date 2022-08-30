@@ -1,5 +1,5 @@
 <app-header [principalTitle]="title"></app-header>
-<div *ngIf="dragonBallCharacters.length === 0; else listCharacters">
+<div *ngIf="dragonBallCharacters.length !== 0; else listCharacters">
     <app-characters-list [characters]="dragonBallCharacters"></app-characters-list>
 </div>
 <ng-template #listCharacters>
