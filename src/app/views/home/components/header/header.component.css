@@ -1,13 +1,13 @@
 h1 {
     color: orange;
     text-align: center;
-    line-height: 5rem;
+    line-height: 3rem;
     font-size: 35px;
     font-family: ui-monospace;
 }
 
 hr {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     width: 80%;
     border: 1px solid #ffeac1;
 }
@@ -21,7 +21,7 @@ hr {
 /* -----------------MEDIA QUERYS----------------- */
 
 /* Desde 0px hasta 576px */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
     /* Se ejecutan estos estilos */
     h1 {

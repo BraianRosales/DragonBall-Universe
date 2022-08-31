@@ -66,6 +66,64 @@ h1 {
 
 /* -----------------MEDIA QUERYS----------------- */
 
+@media (max-width: 1669px) {
+    .characters-list {
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 20%;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .characters-list {
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 24%;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .characters-list {
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 27%;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .characters-list {
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 38%;
+        margin: 15px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .characters-list {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .example-card {
+        width: 89%;
+        margin: 0px;
+        margin-bottom: 25px;
+    }
+}
+
 /* Desde 0px hasta 576px */
 @media (max-width: 576px) {
 
@@ -80,16 +138,4 @@ h1 {
         margin: 0px;
         margin-bottom: 25px;
     }
-
-    ::ng-deep .ngx-pagination {
-        width: 85% !important;
-    }
 }
-
-@media (max-width: 768px) {}
-
-@media (max-width: 992px) {}
-
-@media (max-width: 1200px) {}
-
-@media (max-width: 1400px) {}
