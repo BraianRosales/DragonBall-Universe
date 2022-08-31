@@ -62,7 +62,7 @@
 
 @media (max-width: 1440px) {
     .characters-list {
-        padding-left: 0px;
+        padding-left: 100px;
     }
 
     .example-card {
