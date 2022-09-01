@@ -41,6 +41,10 @@ p {
     margin-right: -12px;
 }
 
+.p-link:hover{
+    color: orange;
+}
+
 .example-container {
     position: absolute;
     top: 0;

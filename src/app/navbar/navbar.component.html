@@ -3,8 +3,8 @@
         <p>GUERROS Z</p>
     </li>
     <li (click)="closeNavbar()" [routerLink]="['/favorites']">
-        <p *ngIf="myList.length > 0; else templateName">FAVORITOS
-            <span> {{myList.length}}</span>
+        <p *ngIf="myList.length > 0; else templateName">
+            FAVORITOS <span> {{myList.length}}</span>
         </p>
         <ng-template #templateName>
             <p>FAVORITOS</p>
