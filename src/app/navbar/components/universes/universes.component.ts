@@ -10,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./universes.component.css']
 })
 export class UniversesComponent implements OnInit{
+  /**Con esta variable seteo el numero del url y se lo mando al stateApp.service.ts */ 
   universeNumber!: number;
+  /**Guardo la lista de los personajes del universo correspondiente, seteando el universo con el mismo universeNumber. */
   universeList: CharacterDB[] = []
 
   constructor(private stateAppService: StateAppService, private dragonBallService: DragonballService,  private route: ActivatedRoute) { }
@@ -25,6 +27,7 @@ export class UniversesComponent implements OnInit{
     })
   }
 
+  /**Filtro los character por universo. */
   filterByUnivese(){
     this.dragonBallService.charactersDB()
     .subscribe((characters: CharacterDB[]) => {
@@ -32,6 +35,7 @@ export class UniversesComponent implements OnInit{
     })
   }
 
+  /**Retorno true si la lista universeList esta vacía, funciona como flag. */
   myListIsEmpty() {
     return this.universeList.length === 0;
   }

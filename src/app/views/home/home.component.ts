@@ -9,6 +9,7 @@ import { DragonballService } from 'src/app/services/dragonball.service';
 })
 export class HomeComponent implements OnInit {
   title = 'DragonBall Universe';
+  /**Contiene todos los personajes de la app. */
   dragonBallCharacters: CharacterDB[] = [];
 
   constructor(private DBservice: DragonballService) {}

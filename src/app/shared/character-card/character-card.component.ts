@@ -7,23 +7,25 @@ import { CharacterDB } from '../../interfaces/index';
   templateUrl: './character-card.component.html',
   styleUrls: ['./character-card.component.css'],
 })
-export class CharacterCardComponent implements OnInit {
+export class CharacterCardComponent {
+  /**Input que me pasa el padre de referencia character. */
   @Input() character!: CharacterDB;
 
   constructor(private stateAppService: StateAppService) {}
 
-  ngOnInit(): void {}
-
+  /**Metodo donde se agrega una character a favoritos. */
   addToFavorites(character: CharacterDB) {
     this.stateAppService.addToFavorites(character);
   }
 
-  removeCharacter(character: CharacterDB){
+  /**Remueve un character de favoritos. */
+  removeCharacter(character: CharacterDB) {
     console.log('Objeto removido: ', character);
-    this.stateAppService.removeFromFavorites(character.id)
+    this.stateAppService.removeFromFavorites(character.id);
   }
 
-  characterInFavorites(character: CharacterDB){
-    return this.stateAppService.myListIds().includes(character.id)
+  /**Retorna true si el character pasado por parametro existe en una lista de IDs. */
+  characterInFavorites(character: CharacterDB) {
+    return this.stateAppService.myListIds().includes(character.id);
   }
 }

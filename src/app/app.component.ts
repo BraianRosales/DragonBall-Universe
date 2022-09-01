@@ -6,17 +6,15 @@ import { MatSidenav } from '@angular/material/sidenav';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+  /**Con el viewChild buscamos la referencia #sidenav en el template dentro de una etiqueta. */
   @ViewChild('sidenav') sidenav!: MatSidenav;
 
   reason = '';
 
+  /**Metodo de referencia del lado del template que se utiliza para cerrar el sideNav */
   close(reason: string) {
     this.reason = reason;
     this.sidenav.close();
   }
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

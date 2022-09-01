@@ -4,6 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'characterLink',
 })
 export class CharacterLinkPipe implements PipeTransform {
+  /**Pipe que retorna un string characterName pero con sun primer letra en Mayuscula. */
   name: string | undefined;
 
   transform(characterName: string | undefined): string {

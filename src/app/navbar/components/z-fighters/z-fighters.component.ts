@@ -11,6 +11,7 @@ import { StateAppService } from '../../../services/stateApp.service';
   styleUrls: ['./z-fighters.component.css'],
 })
 export class ZFightersComponent implements OnInit {
+  /**Lista de personajesZ */
   charactersZ: CharacterDB[] = [];
   
   constructor(private dragonBallService: DragonballService, private stateAppService: StateAppService) {}
@@ -21,12 +22,14 @@ export class ZFightersComponent implements OnInit {
     }, 500);
   }
 
+  /**Metodo que se utiliza para filtrar la lista de guerreros, en este caso solo nos trae los guerreros z */
   getCharactersZ() {
       this.dragonBallService.charactersDB().subscribe((characters: CharacterDB[]) => {
         this.charactersZ = characters.filter((character:CharacterDB) => character.role.toLowerCase() === 'guerrero z')
       });
   }
 
+  /**Metodo flag que indica si la lista esta vacia, funciona como condición. */
   myListIsEmpty() {
     return this.charactersZ.length === 0;
   }

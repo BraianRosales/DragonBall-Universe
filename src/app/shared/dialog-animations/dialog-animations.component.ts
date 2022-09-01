@@ -7,14 +7,13 @@ import { StateAppService } from 'src/app/services/stateApp.service';
   templateUrl: './dialog-animations.component.html',
   styleUrls: ['./dialog-animations.component.css'],
 })
-export class DialogAnimationsComponent implements OnInit {
+export class DialogAnimationsComponent {
   constructor(
     public dialogRef: MatDialogRef<DialogAnimationsComponent>,
     private stateAppService: StateAppService
   ) {}
 
-  ngOnInit(): void {}
-
+  /**Limpia la lista de favoritos. */
   cleanFavorites() {
     this.stateAppService.clean();
   }

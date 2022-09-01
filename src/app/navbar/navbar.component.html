@@ -1,8 +1,8 @@
 <ul>
-    <li [routerLink]="['/fighters']">
+    <li (click)="closeNavbar()" [routerLink]="['/fighters']">
         <p>GUERROS Z</p>
     </li>
-    <li [routerLink]="['/favorites']">
+    <li (click)="closeNavbar()" [routerLink]="['/favorites']">
         <p *ngIf="myList.length > 0; else templateName">FAVORITOS
             <span> {{myList.length}}</span>
         </p>
@@ -14,7 +14,7 @@
         <button mat-menu-item [matMenuTriggerFor]="universes">UNIVERSOS</button>
         <mat-menu #universes="matMenu">
             <div *ngFor="let universeNumber of allUniverses">
-                <button [routerLink]="universeNumber | universeLink"  routerLinkActive="active" mat-menu-item>universo {{universeNumber}}</button>
+                <button (click)="closeNavbar()" [routerLink]="universeNumber | universeLink"  routerLinkActive="active" mat-menu-item>universo {{universeNumber}}</button>
             </div>
         </mat-menu>
     </li>

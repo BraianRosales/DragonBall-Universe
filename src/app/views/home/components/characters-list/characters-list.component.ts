@@ -6,11 +6,7 @@ import { CharacterDB } from 'src/app/interfaces';
   templateUrl: './characters-list.component.html',
   styleUrls: ['./characters-list.component.css'],
 })
-export class CharactersListComponent implements OnInit {
+export class CharactersListComponent {
   @Input() characters: CharacterDB[] = [];
   page: number = 1;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
