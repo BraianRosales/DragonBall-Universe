@@ -31,7 +31,7 @@
               {
                 "glob": "_redirects",
                 "input": "src",
-                "output": "/"
+                "output": "dist/dragon-ball-infinity"
               }
             ],
             "styles": [
