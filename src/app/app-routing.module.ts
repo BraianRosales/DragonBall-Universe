@@ -17,15 +17,15 @@ export const routes: Routes = [
   },
   {
     path:'universe/:number',
-    loadChildren: () => import('./navbar/components/universes/universes.module').then(m => m.UniversesModule)
+    loadChildren: () => import('./navbar/views-navbar/universes/universes.module').then(m => m.UniversesModule)
   },
   {
     path:'fighters',
-    loadChildren: () => import('./navbar/components/z-fighters/z-fighters.module').then(m => m.ZFightersModule)
+    loadChildren: () => import('./navbar/views-navbar/z-fighters/z-fighters.module').then(m => m.ZFightersModule)
   },
   {
     path:'favorites',
-    loadChildren: () => import('./navbar/components/favorites/favorites.module').then(m => m.FavoritesModule)
+    loadChildren: () => import('./navbar/views-navbar/favorites/favorites.module').then(m => m.FavoritesModule)
   },
   {
     path: '404',

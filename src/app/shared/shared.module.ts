@@ -9,9 +9,25 @@ import { DialogAnimationsComponent } from './dialog-animations/dialog-animations
 import { UniverseLinkPipe } from './pipes/universe-link.pipe';
 
 @NgModule({
-  imports: [MaterialModule,RouterModule, CommonModule],
-  exports: [CharacterCardComponent, NoCharacterFoundComponent, DialogAnimationsComponent, MaterialModule, UniverseLinkPipe],
-  declarations: [CharacterCardComponent,CharacterLinkPipe, NoCharacterFoundComponent, DialogAnimationsComponent, UniverseLinkPipe],
+  imports: [
+    MaterialModule, 
+    RouterModule, 
+    CommonModule
+  ],
+  exports: [
+    CharacterCardComponent,
+    NoCharacterFoundComponent,
+    DialogAnimationsComponent,
+    MaterialModule,
+    UniverseLinkPipe,
+  ],
+  declarations: [
+    CharacterCardComponent,
+    CharacterLinkPipe,
+    NoCharacterFoundComponent,
+    DialogAnimationsComponent,
+    UniverseLinkPipe,
+  ],
   providers: [],
 })
 export class SharedModule {}

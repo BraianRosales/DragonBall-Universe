@@ -64,6 +64,10 @@ img {
     border-radius: 10px;
 }
 
+.mat-form-field {
+    margin-right: 8px;
+}
+
 /* -----------------MEDIA QUERYS----------------- */
 
 @media (max-width: 1669px) {
@@ -94,8 +98,6 @@ img {
         padding-left: 0px;
     }
 }
-
-@media (max-width: 768px) {}
 
 /* Desde 0px hasta 576px */
 @media (max-width: 576px) {

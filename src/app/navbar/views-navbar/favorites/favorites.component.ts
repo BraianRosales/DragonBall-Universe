@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { StateAppService } from '../../../services/stateApp.service';
 import { DialogAnimationsComponent } from '../../../shared/dialog-animations/dialog-animations.component';

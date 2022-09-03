@@ -1,0 +1,9 @@
+.example {
+    display: flex;
+    justify-content: center;
+    color: orangered;
+}
+
+::ng-deep .mat-snack-bar-container {
+    background-color: #282828;
+}

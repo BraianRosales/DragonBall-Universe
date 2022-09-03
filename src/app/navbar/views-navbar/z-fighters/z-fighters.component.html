@@ -9,7 +9,7 @@
 
     <div class="characters-list">
         <div *ngIf="myListIsEmpty() ;else lsFavorites">
-            CARGANDO...
+            CARGANDO PERSONAJES...
         </div>
         <ng-template #lsFavorites>
             <mat-card *ngFor="let character of charactersZ" class="example-card">

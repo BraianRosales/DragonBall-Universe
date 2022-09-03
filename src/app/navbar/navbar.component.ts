@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { StateAppService } from '../services/stateApp.service';
 import { CharacterDB } from '../interfaces/index';
-import { ActivatedRoute } from '@angular/router';
 import { DragonballService } from '../services/dragonball.service';
 
 @Component({
@@ -10,6 +9,7 @@ import { DragonballService } from '../services/dragonball.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+
   myList: CharacterDB[] = [];
   allUniverses: number[] = []
 
@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(private dragonBallService: DragonballService, 
               private stateService: StateAppService, 
-              private route: ActivatedRoute) {}
+              ) {}
 
   ngOnInit(): void {
     this.stateService.myFavoritesList$.subscribe((list: CharacterDB[]) => {

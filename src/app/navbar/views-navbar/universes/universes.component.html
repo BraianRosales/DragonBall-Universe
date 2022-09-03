@@ -6,7 +6,7 @@
 
     <div class="characters-list">
         <div *ngIf="myListIsEmpty() ;else lsUniverse">
-            CARGANDO...
+            CARGANDO PERSONAJES...
         </div>
         <ng-template #lsUniverse>
             <mat-card *ngFor="let character of universeList" class="example-card">
