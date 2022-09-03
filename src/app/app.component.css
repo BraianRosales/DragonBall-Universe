@@ -17,6 +17,13 @@
     margin-left: 20px;
 }
 
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 10px;
+    z-index: 1000;
+}
+
 .btn-close {
     width: 100%;
     float: right;
